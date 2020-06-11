@@ -11,14 +11,11 @@ Future work can be done. One should test the trained networks in a concrete, tim
 
 ## Folder structure 
 
-### Python code 
+- ***Python code*** 
 
-#### Orientation detection and Discontinuity location
-Contains folders and notebook of the code used to compute and collect the results that are shown in the report.
+	- ***Orientation detection*** and ***Discontinuity location***
+	Contains folders and notebook of the code used to compute and collect the results that are shown in the report.
 
-##### data
-It contains all the data needed to train and test the neural network.
-Note that discontinuity R means that the value of the discontinuity is taken in R, whereas dicontinuity_0_1 means that the value of the discontinuity is 0 and 1.
 ##### data_prediction
 It contains some prediction
 ##### Experiment
