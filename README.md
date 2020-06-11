@@ -1,11 +1,14 @@
 # Detecting discontinuity orientation and location on two-dimensional grids using neural networks
 In a recent paper *Detecting troubled-cells on two-dimensional unstructured grids using a neural network* by Deep Ray and Jan S. Hesthaven, a neural network is used to detect discontinuities in the numerical solutions of two-dimensional conservation laws.  Based on this troubled-cells detector, the present work aims to construct a neural network to predict the orientation and the location of the shock in each troubled-cell.
 
-## Technical detail
-	- The code uses a keras implementation using tensorflow backend.
-	- All the notebooks are already run.
-	- The paths that are used in the code have to be slightly modified.
-	- The Data used in the project are too large (4.5 G) to be uploaded on Github. Thus the data can be either recompute using the code in Matlab, or it can be downloaded using this Wetransfer link:  https://we.tl/t-Wcw88iHozl
+## Technical detail :
+
+>The code uses a keras implementation using tensorflow backend.
+>All the notebooks are already run.
+>The paths that are used in the code have to be slightly modified.
+>The Data used in the project are too large (4.5 G) to be uploaded on Github. 
+>Thus the data can be either recompute using the code in Matlab, 
+>or it can be downloaded using this Wetransfer link:  https://we.tl/t-Wcw88iHozl
 
 ## Folder structure : 
 
