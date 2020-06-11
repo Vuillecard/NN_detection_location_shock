@@ -77,7 +77,7 @@ A = [A11;A12;A21;A22];
 
 data_set_1 = csvread('C:\Users\pierr\Desktop\Projet de semestre I\data\test_set\discontinuity_R\mesh_C\data_test_all_p5_circle.csv');
 
-pred_1 = csvread('C:\Users\pierr\Desktop\Projet de semestre I\NN_pyhton_code\Task 2\data\pred_task_2data_test_all_p5_circle.csv');
+pred_1 = csvread('\Python code\Location detection\data_prediction\pred_task_2data_test_all_p5_circle.csv');
 
 pred_plot_ortho(data_set_1 ,pred_1, Mesh,A,Output,b_);
 %pred_plot(data_set_1 ,pred_1 , Mesh,A,Output,'plots' )

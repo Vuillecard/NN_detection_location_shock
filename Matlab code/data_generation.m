@@ -7,13 +7,16 @@ CleanUp2D;
 close all; clear all; clc;
 
 % boundary conditions
+% If using an structure mesh use BC_cond with 'P' otherwise use 'D'
+
 %BC_cond = {100001,'D'; 100002,'D'; 100003,'D'; 100004,'D'};
 BC_cond = {100001,'P'; 100002,'P'; 100003,'P'; 100004,'P'};
+
 %solution to be considered
 alph=70*pi/180;
 InitialCond = @(x,y) 2*(y<tan(alph)*x)+4*(y>=tan(alph)*x);
 
-%polynomial order
+%polynomial order p
 N = 4;
 
 %ranges to visualize solution
@@ -95,9 +98,14 @@ for deg = degrees
                 
                 alph=deg*pi/180;
                 fun = @(x,y) a*(y<tan(alph)*x)+b*(y>=tan(alph)*x);
-
-                %data_ = data_gen_all_neighborhood_orthogonal(alph,fun,Net,Mesh,Ainv,b_,true);
+                
+                %Need to select of the alternative:
+                %   data_ = data_gen(alph ,fun,Net,Mesh,Ainv11,Ainv12,Ainv21,Ainv22 ,true,false );
+                %   data_ = data_gen_close_neighborhood(alph ,fun,Net,Mesh,Ainv11,Ainv12,Ainv21,Ainv22 ,true,false );
+                %   data_ = data_gen_all_neighborhood_orthogonal(alph,fun,Net,Mesh,Ainv,b_,true);
+                
                 data_ = data_gen_all_neighborhood(alph ,fun,Net,Mesh,Ainv11,Ainv12,Ainv21,Ainv22 ,true,false );
+                
                 data = [data ; data_ ] ;
            end
 
@@ -108,7 +116,8 @@ for deg = degrees
        
 end
 
-csvwrite('C:\Users\pierr\Desktop\Projet de semestre I\data\train_set\discontinuity_R\mesh_B\data_set_p_4_all.csv',data)
+% Save the data in a file 
+csvwrite('\data\train_set\discontinuity_R\mesh_B\data_set_p_4_all.csv',data)
 disp('... Data generation succeed ')
 
 
