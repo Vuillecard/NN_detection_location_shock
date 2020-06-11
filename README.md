@@ -24,12 +24,12 @@ In a recent paper *Detecting troubled-cells on two-dimensional unstructured grid
         - ****\Results :****
         Contains results in csv file that is shown in the report.
         - ``circular_prediction.ipynb`` : Notebook that contains the prediction of a circular discontinuity for mesh C and few orders.
-        -``data_exploration.ipynb`` : Notebook that describes the dataset.
-        -`` Mesh dependency.ipynb`` : Notebook that contains the results of the mesh dependency and the robustness of the neural network.
-        -``Model selection`` :  Notebook that contains the results of the model selection of different architecture of neural networks.
-        -``Results_approach_`` :  Notebook that contains the results of different approaches to train the neural networks.
-        -''function.py'' : contains all the functions that are used in the notebook.
-        -''models.py`` : contains all the neural network architecture.
+        - ``data_exploration.ipynb`` : Notebook that describes the dataset.
+        - `` Mesh dependency.ipynb`` : Notebook that contains the results of the mesh dependency and the robustness of the neural network.
+        - ``Model selection`` :  Notebook that contains the results of the model selection of different architecture of neural networks.
+        - ``Results_approach_`` :  Notebook that contains the results of different approaches to train the neural networks.
+        - ``function.py`` : contains all the functions that are used in the notebook.
+        - ``models.py`` : contains all the neural network architecture.
         
     - ***\Location detection :***
 	Contains folders and notebooks of the code used to compute and collect the results that are shown in the report.
@@ -39,12 +39,12 @@ In a recent paper *Detecting troubled-cells on two-dimensional unstructured grid
         - ****\Results :****
         Contains results in csv file that is shown in the report.
         - ``circular_prediction.ipynb`` : Notebook that contains the prediction of a circular discontinuity for mesh C and few orders.
-        -``data_exploration.ipynb`` : Notebook that describes the dataset.
-        -`` Mesh dependency.ipynb`` : Notebook that contains the results of the mesh dependency and the robustness of the neural network.
-        -``Approach_ .ipynb`` :  Notebook that contains the results of different approaches to train the neural networks.
-        -``method_experiment.ipynb`` : Notebook that contains tests and visualisation some approaches.
-        -''function.py'' : contains all the functions that are used in the notebook.
-        -''models.py`` : contains all the neural network architecture.
+        - ``data_exploration.ipynb`` : Notebook that describes the dataset.
+        - `` Mesh dependency.ipynb`` : Notebook that contains the results of the mesh dependency and the robustness of the neural network.
+        - ``Approach_ .ipynb`` :  Notebook that contains the results of different approaches to train the neural networks.
+        - ``method_experiment.ipynb`` : Notebook that contains tests and visualisation some approaches.
+        - ``function.py`` : contains all the functions that are used in the notebook.
+        - ``models.py`` : contains all the neural network architecture.
 
 - ***\Matlab code***
 	Contains all functions needed to generate the data and visualise the prediction of the neural network. It also contains ``Matlab code description.txt`` that describes all the functions. 
